@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1RF</title>
+    <style>
+        /* Styling for the body */
+        body {
+            background: linear-gradient(to bottom, #f0f8ff, #add8e6);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the form container */
+        .form-container {
+            margin: 5% auto;
+            border: 5px solid black;
+            border-radius: 10px;
+            width: 500px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-spacing: 20px;
+            text-align: center;
+        }
+
+        /* Input field styling */
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px 20px;
+            background-color: #add8e6;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #87ceeb;
+        }
+
+        /* Link styling */
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        /* Help text styling */
+        p {
+            margin: 0;
+        }
+
+        p a {
+            margin-left: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form container to hold the login box -->
+    <div class="form-container">
+        <form action="home.html" method="get" target="1RF">
+            <table>
+                <!-- Username input row -->
+                <tr>
+                    <td>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" placeholder="e.g., abbb@05" required>
+                    </td>
+                </tr>
+                <!-- Password input row -->
+                <tr>
+                    <td>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </td>
+                </tr>
+                <!-- Sign-in button row -->
+                <tr>
+                    <td>
+                        <button type="submit">Sign In</button>
+                    </td>
+                </tr>
+                <!-- Create account link row -->
+                <tr>
+                    <td>
+                        <a href="r.html" target="1RF">Create An Account</a>
+                    </td>
+                </tr>
+                <!-- Help link row -->
+                <tr>
+                    <td>
+                        <p>Need help?
+                            <a href="contact.html" target="1RF">Contact Us</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- Footer with copyright notice -->
+    <footer>
+        &copy; 2024 COOKWARESHOP. All rights reserved.
+    </footer>
+</body>
+</html>
