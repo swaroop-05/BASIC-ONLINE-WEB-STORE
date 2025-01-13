@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <style>
+        /* Styling for the body */
+        body {
+            background: linear-gradient(to bottom, #f9f9f9, #e0f7fa);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the section container */
+        section {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: center;
+            gap: 20px; /* Space between items */
+            padding: 20px;
+        }
+
+        /* Styling for individual product cards */
+        div {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center; /* Center align content */
+            width: 250px; /* Fixed width for consistency */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Hover effect for product cards */
+        div:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        /* Styling for product images */
+        img {
+            border-radius: 8px;
+            margin-bottom: 10px; /* Space below the image */
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Styling for product titles */
+        h3 {
+            font-size: 1.2rem;
+            color: #333333;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <img src="smasher.jpg" alt="Category 1">
+            <h3>Cutting Tools</h3>
+        </div>
+        <div>
+            <img src="baking tool.jpeg" alt="Category 2">
+            <h3>Measuring Tools</h3>
+        </div>
+        <div>
+            <img src="watermelon-cutter-4.jpg" alt="Category 3">
+            <h3>Mixing Tools</h3>
+        </div>
+        <div>
+            <img src="cheese slicer.jpg" alt="Category 4">
+            <h3>Cooking Tools</h3>
+        </div>
+        <div>
+            <img src="fruit cutter.jpeg" alt="Category 5">
+            <h3>Baking Tools</h3>
+        </div>
+    </section>
+</body>
+</html>
