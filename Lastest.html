@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Arrivals</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #e3f2fd);
+        }
+
+        /* Styling for the latest arrivals section */
+        .latest-arrivals {
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: center; /* Center the products */
+            gap: 20px; /* Space between products */
+            padding: 20px;
+        }
+
+        /* Styling for individual product cards */
+        .product {
+            background-color: #ffffff; /* White background for the card */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            text-align: center; /* Center-align content */
+            width: 200px; /* Fixed width for product cards */
+            padding: 15px; /* Inner spacing */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+        }
+
+        /* Hover effect for product cards */
+        .product:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        }
+
+        /* Styling for product images */
+        .product img {
+            border-radius: 8px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space below the image */
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Styling for product names */
+        .product h3 {
+            font-size: 1.2rem;
+            color: #333333;
+            margin: 10px 0 5px; /* Margin above and below */
+        }
+
+        /* Styling for product prices */
+        .product p {
+            font-size: 1rem;
+            color: #007BFF; /* Blue color for the price */
+            margin: 5px 0; /* Margin above and below */
+        }
+
+        /* Styling for Add to Cart buttons */
+        .product button {
+            background-color: #ff5722; /* Orange button background */
+            color: #ffffff; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Button padding */
+            font-size: 1rem;
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        /* Hover effect for buttons */
+        .product button:hover {
+            background-color: #e64a19; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <section class="latest-arrivals">
+        <div class="product">
+            <img src="watermelon-cutter-4.jpg" alt="Product 1">
+            <h3>Watermelon Cutter</h3>
+            <p>RS.400</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="baking tool.jpeg" alt="Product 2">
+            <h3>Measuring Cups</h3>
+            <p>RS.500</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="coffe mixer.jpg" alt="Product 3">
+            <h3>Coffee Mixer</h3>
+            <p>RS.650</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>
